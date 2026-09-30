@@ -1,0 +1,12 @@
+{
+  "name": "flakehunter-test-fixture",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --reporter=junit --outputFile=junit.xml"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.5"
+  }
+}
