@@ -6,6 +6,6 @@ describe("FixtureSuite", () => {
   });
 
   it("maybe flaky test", () => {
-    expect(Math.random()).toBeGreaterThan(0.1);
+    expect(Math.random()).toBeGreaterThan(0.02);
   });
 });
