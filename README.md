@@ -10,3 +10,7 @@ Trigger a re-run on the same commit with:
 gh workflow run test.yml
 gh run rerun <run-id>
 ```
+
+## License
+
+[MIT](LICENSE).
