@@ -4,6 +4,10 @@ on:
   push:
   workflow_dispatch:
 
+# The token only needs to read the code. Uploading the artifact uses the runner's own credentials, not this token.
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
