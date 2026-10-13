@@ -1,10 +1,13 @@
 {
   "name": "flakehunter-test-fixture",
   "private": true,
+  "license": "MIT",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "test": "vitest run --reporter=junit --outputFile=junit.xml"
+    "test": "bun run test:flaky; bun run test:unit",
+    "test:flaky": "vitest run tests/flaky.test.ts --reporter=junit --outputFile=test-results/flaky.xml",
+    "test:unit": "vitest run tests/unit --reporter=junit --outputFile=test-results/unit/math.xml"
   },
   "devDependencies": {
     "vitest": "^2.1.5"
